@@ -4,12 +4,12 @@
  * Stripe Create Subscription Request.
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Create Subscription Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api/php#create_subscription
  */
 class CreateSubscriptionRequest extends AbstractRequest

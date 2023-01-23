@@ -3,7 +3,7 @@
 /**
  * Stripe Payment Intents Authorize Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 use Money\Formatter\DecimalMoneyFormatter;
 
@@ -99,9 +99,9 @@ use Money\Formatter\DecimalMoneyFormatter;
  *   }
  * </code>
  *
- * @see \Omnipay\Stripe\PaymentIntentsGateway
- * @see \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
+ * @see \Nyehandel\Omnipay\Stripe\PaymentIntentsGateway
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
  * @link https://stripe.com/docs/api/payment_intents
  */
 class AuthorizeRequest extends AbstractRequest

@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 use Omnipay\Tests\GatewayTestCase;
 

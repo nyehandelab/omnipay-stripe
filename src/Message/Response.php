@@ -3,7 +3,7 @@
 /**
  * Stripe Response.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
@@ -14,7 +14,7 @@ use Omnipay\Common\Message\RequestInterface;
  *
  * This is the response class for all Stripe requests.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  */
 class Response extends AbstractResponse implements RedirectResponseInterface
 {
@@ -54,8 +54,8 @@ class Response extends AbstractResponse implements RedirectResponseInterface
     /**
      * Get the charge reference from the response of FetchChargeRequest.
      *
-     * @deprecated 2.3.3:3.0.0 duplicate of \Omnipay\Stripe\Message\Response::getTransactionReference()
-     * @see \Omnipay\Stripe\Message\Response::getTransactionReference()
+     * @deprecated 2.3.3:3.0.0 duplicate of \Nyehandel\Omnipay\Stripe\Message\Response::getTransactionReference()
+     * @see \Nyehandel\Omnipay\Stripe\Message\Response::getTransactionReference()
      * @return array|null
      */
     public function getChargeReference()

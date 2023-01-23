@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe\Message\Transfers;
+namespace Nyehandel\Omnipay\Stripe\Message\Transfers;
 
 use Guzzle\Http\Message\Response;
 use Omnipay\Tests\TestCase;

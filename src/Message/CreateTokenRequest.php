@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 
@@ -37,7 +37,7 @@ class CreateTokenRequest extends AbstractRequest
      * <strong>Only use this if you are using Connect API</strong>
      *
      * @param string $customer The id of the customer
-     * @return \Omnipay\Common\Message\AbstractRequest|\Omnipay\Stripe\Message\CreateTokenRequest
+     * @return \Omnipay\Common\Message\AbstractRequest|\Nyehandel\Omnipay\Stripe\Message\CreateTokenRequest
      */
     public function setCustomer($customer)
     {

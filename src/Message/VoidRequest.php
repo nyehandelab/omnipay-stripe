@@ -3,7 +3,7 @@
 /**
  * Stripe Void Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Void Request.

@@ -3,7 +3,7 @@
 /**
  * Stripe Payment Intents Cancel Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Cancel Payment Intent Request.

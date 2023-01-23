@@ -3,7 +3,7 @@
 /**
  * Stripe Attach Payment Method Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Attach Payment Method Request.
@@ -28,9 +28,9 @@ namespace Omnipay\Stripe\Message\PaymentIntents;
  *   }
  * </code>
  *
- * @see \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
  * @link https://stripe.com/docs/api/payment_methods/detach
  */
 class DetachPaymentMethodRequest extends AbstractRequest

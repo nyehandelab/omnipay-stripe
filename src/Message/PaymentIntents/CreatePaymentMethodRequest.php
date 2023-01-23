@@ -3,7 +3,7 @@
 /**
  * Stripe Create Payment Method Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Create Payment Method Request.
@@ -46,9 +46,9 @@ namespace Omnipay\Stripe\Message\PaymentIntents;
  *   }
  * </code>
  *
- * @see \Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
  * @link https://stripe.com/docs/api/payment_methods/create
  */
 class CreatePaymentMethodRequest extends AbstractRequest

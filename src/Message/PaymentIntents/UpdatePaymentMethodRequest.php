@@ -3,7 +3,7 @@
 /**
  * Stripe Update Payment Method Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Update Payment Method Request.
@@ -19,10 +19,10 @@ namespace Omnipay\Stripe\Message\PaymentIntents;
  *
  * This requires a paymentMethod.
  *
- * @see \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\CreateCustomerRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreateCustomerRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest
  * @link https://stripe.com/docs/api/payment_methods/update
  */
 class UpdatePaymentMethodRequest extends AbstractRequest

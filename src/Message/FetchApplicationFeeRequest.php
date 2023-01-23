@@ -4,7 +4,7 @@
  * Stripe Fetch Application Fee Request.
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Fetch Application Fee Request.
@@ -20,7 +20,7 @@ namespace Omnipay\Stripe\Message;
  *   echo "Gateway fetchApplicationFee response data == " . print_r($data, true) . "\n";
  * </code>
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  *
  * @link https://stripe.com/docs/api#retrieve_application_fee
  */

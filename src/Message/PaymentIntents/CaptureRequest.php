@@ -3,7 +3,7 @@
 /**
  * Stripe Capture Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Capture Request.

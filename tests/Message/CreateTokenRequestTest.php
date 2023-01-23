@@ -6,7 +6,7 @@
  * Time: 21:30
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Omnipay\Tests\TestCase;
 

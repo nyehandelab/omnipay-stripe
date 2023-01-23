@@ -4,12 +4,12 @@
  * Stripe Update Subscription Request.
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Update Subscription Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api#update_subscription
  */
 class UpdateSubscriptionRequest extends AbstractRequest

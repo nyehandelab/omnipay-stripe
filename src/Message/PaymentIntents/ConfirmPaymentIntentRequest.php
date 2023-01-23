@@ -3,7 +3,7 @@
 /**
  * Stripe Payment Intents Authorize Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Confirm Payment Intent Request.
@@ -17,9 +17,9 @@ namespace Omnipay\Stripe\Message\PaymentIntents;
  *
  * For examples, refer to related purchase and authorization classes.
  *
- * @see \Omnipay\Stripe\Gateway
- * @see \Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest
  * @link https://stripe.com/docs/api/payment_intents/confirm
  */
 class ConfirmPaymentIntentRequest extends AbstractRequest

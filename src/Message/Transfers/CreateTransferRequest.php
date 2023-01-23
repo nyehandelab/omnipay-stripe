@@ -4,10 +4,10 @@
  * Stripe Transfer Request (Connect only).
  */
 
-namespace Omnipay\Stripe\Message\Transfers;
+namespace Nyehandel\Omnipay\Stripe\Message\Transfers;
 
 use Omnipay\Common\Exception\InvalidRequestException;
-use Omnipay\Stripe\Message\AuthorizeRequest;
+use Nyehandel\Omnipay\Stripe\Message\AuthorizeRequest;
 
 /**
  * Stripe Transfer Request.

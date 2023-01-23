@@ -4,17 +4,17 @@
  * Stripe Payment Intents Response.
  */
 
-namespace Omnipay\Stripe\Message\SetupIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\SetupIntents;
 
 use Omnipay\Common\Message\ResponseInterface;
-use Omnipay\Stripe\Message\Response as BaseResponse;
+use Nyehandel\Omnipay\Stripe\Message\Response as BaseResponse;
 
 /**
  * Stripe Payment Intents Response.
  *
  * This is the response class for all payment intents related responses.
  *
- * @see \Omnipay\Stripe\PaymentIntentsGateway
+ * @see \Nyehandel\Omnipay\Stripe\PaymentIntentsGateway
  */
 class Response extends BaseResponse implements ResponseInterface
 {

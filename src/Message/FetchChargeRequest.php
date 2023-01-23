@@ -3,13 +3,13 @@
 /**
  * Stripe Fetch Charge Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Fetch Charge Request.
  *
- * @deprecated 2.3.3:3.0.0 functionality provided by \Omnipay\Stripe\Message\FetchTransactionRequest
- * @see \Omnipay\Stripe\Message\FetchTransactionRequest
+ * @deprecated 2.3.3:3.0.0 functionality provided by \Nyehandel\Omnipay\Stripe\Message\FetchTransactionRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\FetchTransactionRequest
  * @link https://stripe.com/docs/api#retrieve_charge
  */
 class FetchChargeRequest extends AbstractRequest

@@ -3,7 +3,7 @@
 /**
  * Stripe Delete Credit Card Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Delete Credit Card Request.

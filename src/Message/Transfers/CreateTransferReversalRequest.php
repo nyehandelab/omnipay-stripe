@@ -4,9 +4,9 @@
  * Stripe Reverse Transfer Request (Connect only).
  */
 
-namespace Omnipay\Stripe\Message\Transfers;
+namespace Nyehandel\Omnipay\Stripe\Message\Transfers;
 
-use Omnipay\Stripe\Message\RefundRequest;
+use Nyehandel\Omnipay\Stripe\Message\RefundRequest;
 
 /**
  * Stripe Transfer Reversal Request.

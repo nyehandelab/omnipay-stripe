@@ -1,11 +1,11 @@
 <?php
 
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 use Omnipay\Tests\GatewayTestCase;
 
 /**
- * @property \Omnipay\Stripe\CheckoutGateway gateway
+ * @property \Nyehandel\Omnipay\Stripe\CheckoutGateway gateway
  */
 class CheckoutGatewayTest extends GatewayTestCase
 {

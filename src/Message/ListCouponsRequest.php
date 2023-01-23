@@ -1,5 +1,5 @@
 <?php
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe List Coupons Request.

@@ -4,12 +4,12 @@
  * Stripe Checkout Session Request.
  */
 
-namespace Omnipay\Stripe\Message\Checkout;
+namespace Nyehandel\Omnipay\Stripe\Message\Checkout;
 
 /**
  * Stripe Checkout Session Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api/checkout/sessions
  */
 class PurchaseRequest extends AbstractRequest

@@ -3,12 +3,12 @@
 /**
  * Stripe Create Invoice Item Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Create Invoice Item Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api#create_invoiceitem
  *
  * Providing the invoice-item reference will update the invoice-item

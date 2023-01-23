@@ -1,11 +1,11 @@
 <?php
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Update Coupon Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api/coupons/update
  */
 class UpdateCouponRequest extends AbstractRequest

@@ -3,7 +3,7 @@
 /**
  * Stripe Fetch Source Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Fetch Source Request.

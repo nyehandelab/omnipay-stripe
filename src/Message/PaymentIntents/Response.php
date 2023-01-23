@@ -3,9 +3,9 @@
 /**
  * Stripe Payment Intents Response.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
-use Omnipay\Stripe\Message\Response as BaseResponse;
+use Nyehandel\Omnipay\Stripe\Message\Response as BaseResponse;
 use Omnipay\Common\Message\RedirectResponseInterface;
 
 /**
@@ -13,7 +13,7 @@ use Omnipay\Common\Message\RedirectResponseInterface;
  *
  * This is the response class for all payment intents related responses.
  *
- * @see \Omnipay\Stripe\PaymentIntentsGateway
+ * @see \Nyehandel\Omnipay\Stripe\PaymentIntentsGateway
  */
 class Response extends BaseResponse implements RedirectResponseInterface
 {

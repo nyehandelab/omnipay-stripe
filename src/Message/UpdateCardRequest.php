@@ -3,7 +3,7 @@
 /**
  * Stripe Update Credit Card Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Update Credit Card Request.

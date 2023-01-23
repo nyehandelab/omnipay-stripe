@@ -3,12 +3,12 @@
 /**
  * Stripe Cancel Subscription Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Stripe Cancel Subscription Request.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api/#cancel_subscription
  */
 class CancelSubscriptionRequest extends AbstractRequest

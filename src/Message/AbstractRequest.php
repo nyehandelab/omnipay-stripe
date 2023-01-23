@@ -4,7 +4,7 @@
  * Stripe Abstract Request.
  */
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Money\Currency;
 use Money\Money;
@@ -34,7 +34,7 @@ use Omnipay\Common\Exception\InvalidRequestException;
  * You can use any of the cards listed at https://stripe.com/docs/testing
  * for testing.
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api
  */
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest

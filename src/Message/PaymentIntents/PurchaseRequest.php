@@ -3,7 +3,7 @@
 /**
  * Stripe Payment Intents Purchase Request.
  */
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 /**
  * Stripe Payment Intents Purchase Request.
@@ -22,10 +22,10 @@ namespace Omnipay\Stripe\Message\PaymentIntents;
  *
  * You should also look at that class for code examples.
  *
- * @see \Omnipay\Stripe\PaymentIntentsGateway
- * @see \Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
- * @see \Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
+ * @see \Nyehandel\Omnipay\Stripe\PaymentIntentsGateway
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+ * @see \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
  * @link https://stripe.com/docs/api/payment_intents
  */
 class PurchaseRequest extends AuthorizeRequest

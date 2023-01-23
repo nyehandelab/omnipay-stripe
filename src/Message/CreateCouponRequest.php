@@ -1,13 +1,13 @@
 <?php
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Omnipay\Common\Exception\InvalidRequestException;
 
 /**
  * Stripe Create Coupon Request
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api/coupons/create
  */
 class CreateCouponRequest extends AbstractRequest

@@ -3,13 +3,13 @@
 /**
  * Stripe Authorize Request.
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use Money\Formatter\DecimalMoneyFormatter;
 use Omnipay\Common\Exception\InvalidRequestException;
 use Omnipay\Common\ItemBag;
-use Omnipay\Stripe\StripeItem;
-use Omnipay\Stripe\StripeItemBag;
+use Nyehandel\Omnipay\Stripe\StripeItem;
+use Nyehandel\Omnipay\Stripe\StripeItemBag;
 
 /**
  * Stripe Authorize Request.
@@ -73,7 +73,7 @@ use Omnipay\Stripe\StripeItemBag;
  *   }
  * </code>
  *
- * @see \Omnipay\Stripe\Gateway
+ * @see \Nyehandel\Omnipay\Stripe\Gateway
  * @link https://stripe.com/docs/api#charges
  */
 class AuthorizeRequest extends AbstractRequest

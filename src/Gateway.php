@@ -3,13 +3,13 @@
 /**
  * Stripe Charge Gateway.
  */
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 /**
  * Stripe Charge Gateway.
  *
- * @see \Omnipay\Stripe\AbstractGateway
- * @see \Omnipay\Stripe\Message\AbstractRequest
+ * @see \Nyehandel\Omnipay\Stripe\AbstractGateway
+ * @see \Nyehandel\Omnipay\Stripe\Message\AbstractRequest
  *
  * @link https://stripe.com/docs/api
  *
@@ -27,42 +27,42 @@ class Gateway extends AbstractGateway
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\AuthorizeRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\AuthorizeRequest
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\AuthorizeRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\CaptureRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CaptureRequest
      */
     public function capture(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CaptureRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CaptureRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PurchaseRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PurchaseRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PurchaseRequest', $parameters);
     }
 
     /**
-     * @deprecated 2.3.3:3.0.0 duplicate of \Omnipay\Stripe\Gateway::fetchTransaction()
-     * @see \Omnipay\Stripe\Gateway::fetchTransaction()
+     * @deprecated 2.3.3:3.0.0 duplicate of \Nyehandel\Omnipay\Stripe\Gateway::fetchTransaction()
+     * @see \Nyehandel\Omnipay\Stripe\Gateway::fetchTransaction()
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchChargeRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchChargeRequest
      */
     public function fetchCharge(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchChargeRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchChargeRequest', $parameters);
     }
 
     //
@@ -73,31 +73,31 @@ class Gateway extends AbstractGateway
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\CreateCardRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreateCardRequest
      */
     public function createCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateCardRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateCardRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\UpdateCardRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\UpdateCardRequest
      */
     public function updateCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\UpdateCardRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\UpdateCardRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\DeleteCardRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\DeleteCardRequest
      */
     public function deleteCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeleteCardRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\DeleteCardRequest', $parameters);
     }
 
     //
@@ -114,11 +114,11 @@ class Gateway extends AbstractGateway
      * Use this request to create a new token to make a direct charge on a customer of the platform.
      *
      * @param array $parameters parameters to be passed in to the TokenRequest.
-     * @return \Omnipay\Stripe\Message\CreateTokenRequest The create token request.
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreateTokenRequest The create token request.
      */
     public function createToken(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateTokenRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateTokenRequest', $parameters);
     }
 
     /**
@@ -138,234 +138,234 @@ class Gateway extends AbstractGateway
      *
      * @param array $parameters
      *
-     * @return \Omnipay\Stripe\Message\FetchTokenRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchTokenRequest
      */
     public function fetchToken(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchTokenRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchTokenRequest', $parameters);
     }
 
     /**
      * Create Plan
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreatePlanRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreatePlanRequest
      */
     public function createPlan(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreatePlanRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreatePlanRequest', $parameters);
     }
 
     /**
      * Fetch Plan
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchPlanRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchPlanRequest
      */
     public function fetchPlan(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchPlanRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchPlanRequest', $parameters);
     }
 
     /**
      * Delete Plan
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\DeletePlanRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\DeletePlanRequest
      */
     public function deletePlan(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeletePlanRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\DeletePlanRequest', $parameters);
     }
 
     /**
      * List Plans
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\ListPlansRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\ListPlansRequest
      */
     public function listPlans(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\ListPlansRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\ListPlansRequest', $parameters);
     }
 
     /**
      * Create Subscription
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateSubscriptionRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreateSubscriptionRequest
      */
     public function createSubscription(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateSubscriptionRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateSubscriptionRequest', $parameters);
     }
 
     /**
      * Fetch Subscription
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchSubscriptionRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchSubscriptionRequest
      */
     public function fetchSubscription(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchSubscriptionRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchSubscriptionRequest', $parameters);
     }
 
     /**
      * Update Subscription
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\UpdateSubscriptionRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\UpdateSubscriptionRequest
      */
     public function updateSubscription(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\UpdateSubscriptionRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\UpdateSubscriptionRequest', $parameters);
     }
 
     /**
      * Cancel Subscription
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CancelSubscriptionRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CancelSubscriptionRequest
      */
     public function cancelSubscription(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CancelSubscriptionRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CancelSubscriptionRequest', $parameters);
     }
 
     /**
      * Fetch Schedule Subscription
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchSubscriptionSchedulesRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchSubscriptionSchedulesRequest
      */
     public function fetchSubscriptionSchedules(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchSubscriptionSchedulesRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchSubscriptionSchedulesRequest', $parameters);
     }
 
     /**
      * Fetch Event
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchEventRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchEventRequest
      */
     public function fetchEvent(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchEventRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchEventRequest', $parameters);
     }
 
     /**
      * Fetch Invoice Lines
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchInvoiceLinesRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchInvoiceLinesRequest
      */
     public function fetchInvoiceLines(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchInvoiceLinesRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchInvoiceLinesRequest', $parameters);
     }
 
     /**
      * Fetch Invoice
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchInvoiceRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchInvoiceRequest
      */
     public function fetchInvoice(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchInvoiceRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchInvoiceRequest', $parameters);
     }
 
     /**
      * List Invoices
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\ListInvoicesRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\ListInvoicesRequest
      */
     public function listInvoices(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\ListInvoicesRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\ListInvoicesRequest', $parameters);
     }
 
     /**
      * Create Invoice Item
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateInvoiceItemRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreateInvoiceItemRequest
      */
     public function createInvoiceItem(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateInvoiceItemRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateInvoiceItemRequest', $parameters);
     }
 
     /**
      * Fetch Invoice Item
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchInvoiceItemRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchInvoiceItemRequest
      */
     public function fetchInvoiceItem(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchInvoiceItemRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchInvoiceItemRequest', $parameters);
     }
 
     /**
      * Delete Invoice Item
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\DeleteInvoiceItemRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\DeleteInvoiceItemRequest
      */
     public function deleteInvoiceItem(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeleteInvoiceItemRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\DeleteInvoiceItemRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CreateSourceRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CreateSourceRequest
      */
     public function createSource(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateSourceRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateSourceRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\AttachSourceRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\AttachSourceRequest
      */
     public function attachSource(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\AttachSourceRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\AttachSourceRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchSourceRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchSourceRequest
      */
     public function detachSource(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DetachSourceRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\DetachSourceRequest', $parameters);
     }
 
     /**
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\FetchSourceRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\FetchSourceRequest
      */
     public function fetchSource(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchSourceRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchSourceRequest', $parameters);
     }
 
     /**
      * Create a completePurchase request.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\CompletePurchaseRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\CompletePurchaseRequest
      */
     public function completePurchase(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CompletePurchaseRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CompletePurchaseRequest', $parameters);
     }
 
     /**
@@ -375,7 +375,7 @@ class Gateway extends AbstractGateway
      */
     public function createCoupon(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\CreateCouponRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\CreateCouponRequest', $parameters);
     }
 
     /**
@@ -385,7 +385,7 @@ class Gateway extends AbstractGateway
      */
     public function fetchCoupon(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\FetchCouponRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\FetchCouponRequest', $parameters);
     }
 
     /**
@@ -395,7 +395,7 @@ class Gateway extends AbstractGateway
      */
     public function deleteCoupon(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\DeleteCouponRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\DeleteCouponRequest', $parameters);
     }
 
     /**
@@ -405,7 +405,7 @@ class Gateway extends AbstractGateway
      */
     public function updateCoupon(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\UpdateCouponRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\UpdateCouponRequest', $parameters);
     }
 
     /**
@@ -415,6 +415,6 @@ class Gateway extends AbstractGateway
      */
     public function listCoupons(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\ListCouponsRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\ListCouponsRequest', $parameters);
     }
 }

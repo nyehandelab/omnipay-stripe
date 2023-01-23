@@ -3,7 +3,7 @@
  * Stripe Item
  */
 
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 use Omnipay\Common\Item;
 

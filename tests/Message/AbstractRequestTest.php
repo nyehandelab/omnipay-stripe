@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 use GuzzleHttp\Psr7\Request;
 use Mockery;
@@ -13,7 +13,7 @@ class AbstractRequestTest extends TestCase
 
     public function setUp()
     {
-        $this->request = Mockery::mock('\Omnipay\Stripe\Message\AbstractRequest')->makePartial();
+        $this->request = Mockery::mock('\Nyehandel\Omnipay\Stripe\Message\AbstractRequest')->makePartial();
         $this->request->initialize();
     }
 

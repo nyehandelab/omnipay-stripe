@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe\Message\PaymentIntents;
+namespace Nyehandel\Omnipay\Stripe\Message\PaymentIntents;
 
 use Omnipay\Tests\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Omnipay\Stripe\Message\Transfers;
+namespace Nyehandel\Omnipay\Stripe\Message\Transfers;
 
 use Guzzle\Http\Message\Response;
 use Omnipay\Tests\TestCase;
@@ -39,7 +39,7 @@ class FetchTransferReversalRequestTest extends TestCase
             array(\GuzzleHttp\Psr7\parse_response(file_get_contents($this->mockDir.'/FetchTransferReversalSuccess.txt')))
         );
 
-        /** @var \Omnipay\Stripe\Message\Response $response */
+        /** @var \Nyehandel\Omnipay\Stripe\Message\Response $response */
         $response = $this->request->send();
 
         $this->assertTrue($response->isSuccessful());

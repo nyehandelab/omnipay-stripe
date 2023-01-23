@@ -2,7 +2,7 @@
 /**
  * CreateSourceRequest
  */
-namespace Omnipay\Stripe\Message;
+namespace Nyehandel\Omnipay\Stripe\Message;
 
 /**
  * Class CreateSourceRequest

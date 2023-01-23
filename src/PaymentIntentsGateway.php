@@ -4,13 +4,13 @@
  * Stripe Payment Intents Gateway.
  */
 
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 /**
  * Stripe Payment Intents Gateway.
  *
- * @see \Omnipay\Stripe\AbstractGateway
- * @see \Omnipay\Stripe\Message\AbstractRequest
+ * @see \Nyehandel\Omnipay\Stripe\AbstractGateway
+ * @see \Nyehandel\Omnipay\Stripe\Message\AbstractRequest
  *
  * @link https://stripe.com/docs/api
  *
@@ -28,11 +28,11 @@ class PaymentIntentsGateway extends AbstractGateway
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest
      */
     public function authorize(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AuthorizeRequest', $parameters);
     }
 
     /**
@@ -41,7 +41,7 @@ class PaymentIntentsGateway extends AbstractGateway
      * In reality, we're confirming the payment intent.
      * This method exists as an alias to in line with how Omnipay interfaces define things.
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
      */
     public function completeAuthorize(array $options = [])
     {
@@ -51,43 +51,43 @@ class PaymentIntentsGateway extends AbstractGateway
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\CaptureRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CaptureRequest
      */
     public function capture(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\CaptureRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CaptureRequest', $parameters);
     }
 
     /**
      * Confirm a Payment Intent. Use this to confirm a payment intent created by a Purchase or Authorize request.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
      */
     public function confirm(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest', $parameters);
     }
 
     /**
      * Cancel a Payment Intent.
      *
      * @param array $parameters
-     * @return \Omnipay\Stripe\Message\PaymentIntents\CancelPaymentIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CancelPaymentIntentRequest
      */
     public function cancel(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\CancelPaymentIntentRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CancelPaymentIntentRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest
      */
     public function purchase(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\PurchaseRequest', $parameters);
     }
 
     /**
@@ -96,7 +96,7 @@ class PaymentIntentsGateway extends AbstractGateway
      * In reality, we're confirming the payment intent.
      * This method exists as an alias to in line with how Omnipay interfaces define things.
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\ConfirmPaymentIntentRequest
      */
     public function completePurchase(array $options = [])
     {
@@ -106,11 +106,11 @@ class PaymentIntentsGateway extends AbstractGateway
     /**
      * Fetch a payment intent. Use this to check the status of it.
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\FetchPaymentIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentIntentRequest
      */
     public function fetchPaymentIntent(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentIntentRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentIntentRequest', $parameters);
     }
 
     //
@@ -119,51 +119,51 @@ class PaymentIntentsGateway extends AbstractGateway
     //
 
     /**
-     * @return \Omnipay\Stripe\Message\PaymentIntents\FetchPaymentMethodRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentMethodRequest
      */
     public function fetchCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentMethodRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\FetchPaymentMethodRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
      */
     public function createCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CreatePaymentMethodRequest
      */
     public function attachCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\AttachPaymentMethodRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest
      */
     public function updateCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdatePaymentMethodRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest
      */
     public function deleteCard(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\DetachPaymentMethodRequest', $parameters);
     }
 
     // Setup Intent
@@ -171,20 +171,20 @@ class PaymentIntentsGateway extends AbstractGateway
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest
      */
     public function createSetupIntent(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest', $parameters);
     }
 
     /**
      * @inheritdoc
      *
-     * @return \Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest
+     * @return \Nyehandel\Omnipay\Stripe\Message\SetupIntents\CreateSetupIntentRequest
      */
     public function retrieveSetupIntent(array $parameters = array())
     {
-        return $this->createRequest('\Omnipay\Stripe\Message\SetupIntents\RetrieveSetupIntentRequest', $parameters);
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\SetupIntents\RetrieveSetupIntentRequest', $parameters);
     }
 }

@@ -3,7 +3,7 @@
  * Stripe Item bag
  */
 
-namespace Omnipay\Stripe;
+namespace Nyehandel\Omnipay\Stripe;
 
 use Omnipay\Common\ItemBag;
 use Omnipay\Common\ItemInterface;
