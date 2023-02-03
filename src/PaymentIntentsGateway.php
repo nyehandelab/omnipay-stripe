@@ -51,6 +51,16 @@ class PaymentIntentsGateway extends AbstractGateway
     /**
      * @inheritdoc
      *
+     * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdateRequest
+     */
+    public function update(array $parameters = array())
+    {
+        return $this->createRequest('\Nyehandel\Omnipay\Stripe\Message\PaymentIntents\UpdateRequest', $parameters);
+    }
+
+    /**
+     * @inheritdoc
+     *
      * @return \Nyehandel\Omnipay\Stripe\Message\PaymentIntents\CaptureRequest
      */
     public function capture(array $parameters = array())
